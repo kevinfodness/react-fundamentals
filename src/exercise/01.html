@@ -19,15 +19,17 @@
 <!doctype html>
 <html>
 <head>
-	<title>Excercise 01</title>
+	<title>Exercise 01 - Extra Credit</title>
 </head>
 <body>
-<div id="root"></div>
 <script type="module">
   var myDiv = document.createElement('div');
   myDiv.textContent = 'Hello World';
   myDiv.classList.add('container');
-  document.getElementById('root').appendChild(myDiv);
+  var myRoot = document.createElement('div');
+  myRoot.id = 'root';
+  myRoot.appendChild(myDiv);
+  document.body.appendChild(myRoot);
 </script>
 </body>
 </html>
